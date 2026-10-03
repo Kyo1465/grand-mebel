@@ -599,6 +599,20 @@ p {
   }
 }
 
+@media (min-width: 681px) {
+  .hero {
+    min-height: calc(100svh - 79px);
+  }
+
+  .hero-grid {
+    min-height: max(350px, calc(100svh - 165px));
+  }
+
+  .hero-visual {
+    height: clamp(350px, 55svh, 480px);
+  }
+}
+
 @media (max-width: 680px) {
   section[id],
   footer[id] {
